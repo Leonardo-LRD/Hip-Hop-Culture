@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="assets/icon/white_icon.jpg">
+
+    <script src="js/funcoes.js"></script>
+
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>Hip Hop Culture | Cadastro</title>
+</head>
+
+<body>
+    <!-- ============================================== MENU ============================================== -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/icon/png_white_icon.png" alt="Logo - Rap é compromisso">
+            </a>
+        </div>
+        
+        <ul>
+            <li><a href="index.html#section_banner">HIP-HOP</a></li>
+            <li><a href="index.html#section_skt">SKATE</a></li>
+            <li><a href="index.html#section_rap">RAP</a></li>
+            <li><a href="index.html#section_sabota">SABOTAGE</a></li>
+        </ul>
+        
+        <div class="menu-login">
+            <ul>
+                <li><a href="#">CADASTRE-SE</a></li>
+                <li id="pipe">|</li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- ============================================== MENU ============================================== -->
+
+
+    <!-- ============================================== FORMULÁRIO ============================================== -->
+    <section class="container">
+        <div class="banner">
+            <div class="alerta_erro">
+                <div class="card_erro" id="cardErro">
+                    <span id="mensagem_erro"></span>
+                </div>
+            </div>
+
+            <div class="container tamanho-conteudo">
+                <div class="card medio">
+                    <p>Cadastro</p>
+
+                    <div class="formulario">
+                        <!--
+                             Para inserir mais um campo, copie uma das inputs abaixo.
+                             Assim que inserir vá para o script abaixo.
+                         -->
+
+                        <span class="tipo_campo">Nome:</span>
+                        <input id="nome_input" type="text" placeholder="Leonardo">
+    
+                        <span class="tipo_campo">E-mail:</span>
+                        <input id="email_input" type="text" placeholder="leonardo@email.com">
+    
+                        <span class="tipo_campo">Senha:</span>
+                        <input id="senha_input" type="password" placeholder="********">
+    
+                        <span class="tipo_campo">Confirmação da Senha:</span>
+                        <input id="confirmacao_senha_input" type="password" placeholder="********">
+    
+                        <button class="btn" onclick="cadastrar()">Cadastrar</button>
+                    </div>
+
+                    <div id="div_aguardar" class="loading-div">
+                        <!-- <img src="./assets/circle-loading.gif" id="loading-gif"> -->
+
+                        <!-- <svg class="position-absolute mx-auto" viewBox="-2 -2 64 64" width="60" height="60" style="left:0;right:0">
+                            <path d="M30 0A30 30 0 0 1 60 30M30 60A30 30 0 0 1 0 30" fill="none" stroke="#6cf" stroke-width="2">
+                                <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="0.5s" keyTimes="0;1" values="0 30 30;180 30 30" keySplines="0.5 0 0.5 1" calcMode="spline"></animateTransform>
+                            </path>
+                        </svg> -->
+
+                        <!-- Imagem SVG gerada no site: https://loading.io/ - LOADING PRETO -->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                            <g transform="translate(25 50)">
+                                <circle cx="0" cy="0" r="6" fill="#111111">
+                                    <animateTransform attributeName="transform" type="scale" begin="-0.3333333333333333s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+                                </circle>
+                            </g>
+                            <g transform="translate(50 50)">
+                                <circle cx="0" cy="0" r="6" fill="#111111">
+                                    <animateTransform attributeName="transform" type="scale" begin="-0.16666666666666666s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+                                </circle>
+                            </g>
+                            <g transform="translate(75 50)">
+                                <circle cx="0" cy="0" r="6" fill="#111111">
+                                    <animateTransform attributeName="transform" type="scale" begin="0s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+                                </circle>
+                            </g>
+                        </svg>
+                    </div>
+    
+                    <div id="div_erros_login"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================== FORMULÁRIO ============================================== -->
+
+
+    <!-- ============================================== RODAPÉ ============================================== -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/icon/png_white_icon.png" alt="Logo - Rap é compromisso">
+                </a>
+            </div>
+
+            <p>
+                <span>Hip Hop Culture</span> <br>
+                <a href="albuns.html">Rap é Compromisso</a> since 2000. Faça contato pelas redes sociais!
+            </p>
+            
+            <ul class="socials">
+                <li><a href="https://br.linkedin.com/in/leonardo-vas" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/Leonardo-LRD"  target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXJRtgjHCXFFlSbqVKXRNMSRvrpfmwvbpWTkrhbSPtVvkWLFsBzWkpvvbnkZVpwfkllSJ" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; 2022 <a href="https://www.sptech.school/" target="_blank">SPTech</a>. Designed By <span>Leonardo-LRD</span></p>
+        </div>
+    </footer>
+    <!-- ============================================== RODAPÉ ============================================== -->
+</body>
+
+<script src="js/cadastro.js"></script>
+
+</html>

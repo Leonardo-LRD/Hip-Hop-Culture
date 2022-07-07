@@ -1,0 +1,342 @@
+/* ================================== RESET ================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* ================================== RESET ================================== */
+
+
+/* ================================== CORPO ================================== */
+.container {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* ================================== CORPO ================================== */
+
+
+/* ================================ SCROLLBAR ================================ */
+::-webkit-scrollbar {
+    /* width: 0.6vw; */
+    width: .8em;
+    background: radial-gradient(circle, transparent 60%, #000000 100%);
+}
+
+/* BRANCO ================================== */
+::-webkit-scrollbar-track {
+    margin: 3vh;
+    background-color: #333333;
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-track:hover {
+    border: #ffffff solid .1vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #777777;
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+#slc_vote::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+    border: #000 solid 0.1vw;
+}
+/* BRANCO ================================== */
+
+/* FADE P&B ================================ */
+/* ::-webkit-scrollbar-thumb:hover {
+    background: radial-gradient(circle, #000000 0%, #ffffff 100%);
+    border: #ffffff solid .1vw;
+} */
+/* FADE P&B ================================ */
+/* ================================ SCROLLBAR ================================ */
+
+
+/* ================================== MENU ================================== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0 10px 0;
+    font-size: 30px;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 7), transparent);
+    z-index: 96;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    margin: 15px 10px;
+    padding: 5px 0;
+    display: inline-block;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    transition: all 0.25s ease-in-out;
+}
+header ul li a:hover {
+    border-bottom: 3px solid;
+}
+
+header .logo {
+    display: flex;
+    position: absolute;
+    left: 0;
+    margin-left: 3.5vw;
+}
+
+.logo img {
+    height: 80px;
+}
+.logo img:hover {
+    cursor: pointer;
+}
+
+header .menu-login {
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-right: 2vw;
+}
+
+#pipe {
+    margin: 15px 10px;
+    padding: 5px 0;
+    color: #ffffff;
+}
+/* ================================== MENU ================================== */
+
+
+/* =============================== FORMULÁRIOS =============================== */
+/* MENSAGEM ================================= */
+.alerta_erro {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card_erro {
+    display: none;
+    background-color: #fff;
+    color: black;
+    width: 230px;
+    position: fixed;
+    border-radius: 4px;
+    border: #000000 3px solid;
+    outline: 1px solid #ffffff;
+    padding: 10px;
+    right: 7%;
+    bottom: 40%;
+}
+
+.card_erro #mensagem_erro {
+    font-weight: 500;
+    font-size: 20px;
+}
+/* MENSAGEM ================================= */
+
+.card {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* PRETO ==================================== */
+/* .banner .card {
+    margin: 6em 33em 0 0;
+    color: #ffffff;
+    background-color: #111111;
+    text-shadow: none;
+} */
+/* PRETO ==================================== */
+
+/* TRANSPARENTE ============================== */
+/* .banner .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    color: #111111;
+    background-color: #e4e4e442;
+    letter-spacing: 1px;
+    text-shadow: #fff 2px 2px 5px;
+    border-radius: 1.5em;
+    box-shadow: #000000 0 0 30px; 
+    text-transform: uppercase;
+} */
+
+.banner .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    color: #111111;
+    background: rgba(255, 255, 255, 0.1);
+    letter-spacing: 1px;
+    text-shadow: #fff 2px 2px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1.5em;
+    box-shadow: 0 25px 45px rgb(0, 0, 0); 
+    backdrop-filter: blur(1px);
+    text-transform: uppercase;
+}
+/* TRANSPARENTE ============================== */
+
+.card p {
+    padding: .8em 0 .2em 0;
+    font-size: 30px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+/* PRETO ==================================== */
+/* .formulario .tipo_campo {
+    text-shadow: none;
+} */
+/* PRETO ==================================== */
+
+/* TRANSPARENTE ============================== */
+.formulario .tipo_campo {
+    padding-top: 15px;
+    font-size: 20px;
+    text-shadow: #fff 3px 3px 5px;
+}
+/* TRANSPARENTE ============================== */
+
+.formulario input {
+    margin: 8px 0;
+    padding: 10px;
+    width: 20em;
+    color: #000000;
+    font-size: 15px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    outline: #fff 1px solid;
+    border-radius: 8px;
+}
+.formulario input::placeholder {
+    color: #444444;
+    font-size: 15px;
+}
+
+.formulario button {
+    margin: 0.8em 0;
+    padding: 10px 15px;
+    width: 120px;
+    align-self: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #111111;
+    border: 1px #ffffff solid;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+    transition: all 150ms ease-in-out;
+}
+.formulario button:hover {
+    box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 3px #ffffff
+}
+
+/* CARREGAMENTO ============================== */
+.loading-div {
+    width: 50px;
+    margin: auto;
+    display: none;
+}
+
+.loading-div img {
+    height: 50px;
+    width: 50px;
+}
+/* CARREGAMENTO ============================== */
+
+.banner #div_erros_login {
+    margin-top: 15px;
+}
+/* =============================== FORMULÁRIOS =============================== */
+
+
+/* ================================= RODAPÉ ================================= */
+footer {
+    width: 100%;
+    padding-top: 2em;
+    color: #ffffff;
+    background: #111111;
+    text-align: center;
+    word-spacing: .2em;
+}
+
+footer a {
+    color: #ffffff;
+}
+.footer-content a:hover {
+    color: #cc1805;
+    cursor: pointer;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-content p {
+    margin: .2em 0 10px;
+    font-size: larger;
+    line-height: 1.7em;
+    letter-spacing: 1px;
+}
+
+.footer-content span {
+    color: #e1a77e;
+}
+
+.socials {
+    display: flex;
+    margin: 1em 0 2em;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    transition: color .10s ease;
+}
+.socials a:hover {
+    color: #42ffff;
+}
+
+.copyright {
+    padding: 1.2em 0;
+    background: #000000;
+}
+
+.copyright p {
+    letter-spacing: .1em;
+}
+
+.copyright span {
+    opacity: .4;
+    text-transform: uppercase;
+}
+/* ================================= RODAPÉ ================================= */

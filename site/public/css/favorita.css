@@ -1,0 +1,103 @@
+/* ============================ SIDE MENU - AGORA ============================ */
+.sidebar ul #fav_mus a {
+    border: 1px solid #fff;
+    box-shadow: 0 0 8px;
+}
+.sidebar.active #fav_mus a {
+    color: #fff;
+}
+.sidebar ul #fav_mus a:hover {
+    color: #000;
+    background: #fff;
+}
+/* ============================ SIDE MENU - AGORA ============================ */
+
+
+/* ================================== MENU ================================== */
+header {
+    padding-right: 1.5em;
+    justify-content: flex-end;
+    position: absolute;
+    /* caso fique ruim no notebook, aumentar fonte */
+    font-size: 20px;
+}
+
+header .logo {
+    margin-left: 8.5vw;
+}
+/* ================================== MENU ================================== */
+
+
+/* ================================== CORPO ================================== */
+.home_content .container {
+    height: 100vh;
+    background-image:url("../assets/img/favorita.jpg");
+    display: flex;
+    background-attachment: local;
+    align-items: center;
+    justify-content: center;
+}
+/* ================================== CORPO ================================== */
+
+
+/* =============================== FORMULÁRIO =============================== */
+/* MENSAGEM ================================= */
+.card_erro {
+    right: 2%;
+}
+/* MENSAGEM ================================= */
+
+/* PRETO ==================================== */
+.banner .card {
+    /* width: 50em; */
+    margin-top: 3em;
+    width: 100vh;
+    height: 65vh;
+    justify-content: space-evenly;
+    /* max-height: 425px; */
+    color: #ffffff;
+    background-color: #11111163;
+    border-radius: 0;
+    text-shadow: none;
+    box-shadow: #fff 0 0 40px; 
+    text-transform: none;
+    backdrop-filter: none;
+}
+
+.card p {
+    padding: 1.5em 1.6em 0.7em 1.6em;
+    font-size: 35px;
+}
+
+.formulario .tipo_campo {
+    text-shadow: none;
+}
+
+.formulario #slc_vote {
+    margin: 0.7em 1.5em 0.7em 1.5em;
+    width: 80vh;
+    padding: 15px 12px;
+    color: #000000;
+    font-size: 18px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    outline: #fff 1px solid;
+    border-radius: 8px;
+}
+
+.formulario button {
+    margin: 1em 0 0 0;
+    padding: 14px 12px;
+    width: 150px;
+    align-self: center;
+    cursor: pointer;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #111111;
+    border: 1px #ffffff solid;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+    transition: all 150ms ease-in-out;
+}
+/* PRETO ==================================== */
+/* =============================== FORMULÁRIO =============================== */

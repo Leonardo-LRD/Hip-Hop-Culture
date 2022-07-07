@@ -1,0 +1,39 @@
+/* ================================== CORPO ================================== */
+.container {
+    height: 113vh;
+    background-image: url("../assets/img/cadastro.jpg");
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ================================== CORPO ================================== */
+
+
+/* =============================== FORMULÁRIO =============================== */
+.banner .card {
+    /* height: 510px; */
+    height: fit-content;
+}
+
+.card p {
+    padding: 0.8em 0 0.1em 0;
+}
+
+.formulario {
+    padding-bottom: 15px;
+}
+
+.formulario .tipo_campo {
+    padding-top: 12px;
+}
+
+.formulario button {
+    margin: 0.4em 0;
+}
+
+.loading-div {
+    position: absolute;
+    top: 484px;
+}
+/* =============================== FORMULÁRIO =============================== */

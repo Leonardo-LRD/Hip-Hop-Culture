@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="assets/icon/white_icon.jpg">
+    
+    <script src="js/funcoes.js"></script>
+
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="css/side-menu.css">
+    <link rel="stylesheet" href="css/albuns.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>Hip Hop Culture | Albuns</title>
+</head>
+
+<body onload="validarSessao()"></body>
+<!-- <body> -->
+    <!-- ============================================== MENU ============================================== -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/icon/png_white_icon.png" alt="Logo - Rap é compromisso">
+            </a>
+        </div>
+    
+        <ul>
+            <li><a href="#album1">Rap É Compromisso</a></li>
+            <li id="pipe">|</li>
+            <li><a href="#album2">Uma Luz Que Nunca Irá Se Apagar</a></li>
+            <li id="pipe">|</li>
+            <li><a href="#album3">Rap É o Hino Que Me Tem Vivo</a></li>
+            <li id="pipe">|</li>
+            <li><a href="#album4">Sabotage</a></li>
+            <li id="pipe">|</li>
+            <li><a href="#album5">O Invasor</a></li>
+        </ul>
+    </header>
+    <!-- ============================================== MENU ============================================== -->
+
+
+    <!-- =========================================== SIDE MENU =========================================== -->
+    <div class="sidebar">
+        <div class="logo_content">
+            <img src="assets/icon/png_white_icon.png" width="50px" alt="Logo - Rap é compromisso">
+            <div class="logo">
+                <div class="logo_name">HIP HOP CULTURE</div>
+            </div>
+            <i class="fa-solid fa-bars" id="btn"></i>
+        </div>
+
+        <ul class="nav_list">
+            <!-- <li>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Pesquisar...">
+                <span class="tooltip">Pesquisar...</span>
+            </li> -->
+
+            <li id="fav_mus">
+                <a href="favorita.html">
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="links_name">Musica Favorita</span>
+                </a>
+                <span class="tooltip">Musica Favorita</span>
+            </li>
+
+            <li id="albuns">
+                <a href="#">
+                    <i class="fa-solid fa-compact-disc"></i>
+                    <span class="links_name">Albuns</span>
+                </a>
+                <span class="tooltip">Albuns</span>
+            </li>
+
+            <li id="ranking">
+                <a href="ranking.html">
+                    <i class="fa-solid fa-trophy"></i>
+                    <span class="links_name">Ranking</span>
+                </a>
+                <span class="tooltip">Ranking</span>
+            </li>
+        </ul>
+
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <!-- colocar na função -->
+                    <img id="profile_img" src="" alt="">
+
+                    <div class="name_job">
+                        <div class="name"><span id="b_usuario">Usuário</span></div>
+                        <div class="job">Rap Lover</div>
+                    </div>
+                </div>
+
+                <i onclick="limparSessao()" class="fa-solid fa-arrow-right-from-bracket" id="log-out"></i>
+            </div>
+        </div>
+    </div>
+    <!-- =========================================== SIDE MENU =========================================== -->
+
+
+    <!-- ============================================ CONTEUDO ============================================ -->
+    <div class="home_content">
+        <!-- MUSICA BACKGROUND =================================== -->
+        <!-- NAO FUNCIONA NO CHROME -->
+        <audio src="assets/mp3/Sabotage_-_A_Cultura_-_Rap_Comp_(getmp3.pro).mp3" type="audio.mp3" preload="metadata" autoplay loop></audio>
+        <!-- MUSICA BACKGROUND =================================== -->
+
+
+        <!-- ALBUNS ============================================== -->
+        <section id="album1" class="container">
+            <div class="conteudo" style="margin-top: 85px;">
+                <div class="esquerda">
+                    <figure>
+                        <a href="https://www.youtube.com/watch?v=pRYBBHIhF7I&list=PLdxfTh4VWPt264VjVjztGxjif7uOi00EI" target="_blank">
+                            <img src="assets/img/album_compromisso.jfif">
+                        </a>
+                    </figure>
+                </div>
+
+                <div class="direita">
+                    <ol>
+                        <li>Rap É Compromisso</li>
+                        <li>Um Bom Lugar</li>
+                        <li>No Brooklin</li>
+                        <li>Cocaina</li>
+                        <li>Na Zona Sul</li>
+                        <li>A Cultura</li>
+                        <li>Incentivando O Som</li>
+                        <li>Respeito É Pra Quem Tem</li>
+                        <li>País Da Fome</li>
+                        <li>Cantando Pro Santo</li>
+                    </ol>
+                </div>                
+            </div>
+        </section>
+
+        <section id="album2" class="container">
+            <div class="conteudo">
+                <div class="esquerda">
+                    <div class="e">
+                        <ol>
+                            <li>País da Fome (Parte 2)</li>
+                            <li>Black Steel In The Hour Of Chaos</li>
+                            <li>Vira Lata sa</li>
+                            <li>Giria Criminal</li>
+                            <li>O Gatilho</li>
+                            <li>Ti, Ti, Ti</li>
+                            <li>Dj Cia</li>
+                            <li>O Enxame</li>
+                        </ol>
+                    </div>
+
+                    <div class="d">
+                        <ol>
+                            <li>Mun-rá</li>
+                            <li>Dorobo</li>
+                            <li>Dama Tereza</li>
+                            <li>Piripac</li>
+                            <li>Nem Tudo Está Perdido</li>
+                            <li>Cabeça de Nego</li>
+                            <li>Aracnideo</li>
+                            <li>Mosquito</li>
+                            <li>Invasor</li>
+                            <li>O Retorno</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="direita">
+                    <figure>
+                        <a href="https://www.youtube.com/watch?v=JutatJrb1kg&list=PLEnVYuI8UOFhzMuAw6HRvcvYSQsZ6Szyb" target="_blank">
+                            <img src="assets/img/album_luz.jpg">
+                        </a>
+                    </figure>
+                </div>                
+            </div>
+        </section>
+
+        <section id="album3" class="container">
+            <div class="conteudo">
+                <div class="esquerda">
+                    <figure>
+                        <a href="https://www.youtube.com/watch?v=0_8O-7dLcGA" target="_blank">
+                            <img src="assets/img/album_hino.png">
+                        </a>
+                    </figure>
+                </div>
+
+                <div class="direita">
+                    <ol>
+                        <li>Rap Nacional 2000</li>
+                        <li>Cabeça de Nêgo</li>
+                        <li>Me Empresta o Microfone</li>
+                        <li>Cachorro Louco No Freestyle</li>
+                        <li>Livro</li>
+                        <li>Marginal Alado</li>
+                        <li>O Desabafo</li>
+                        <li>Quem Vai Buscar Pra Fumá</li>
+                        <li>Vamo Fuma!</li>
+                        <li>Mun-Rá</li>
+                        <li>O Rap É Compromisso</li>
+                        <li>Na Zona Sul</li>
+                    </ol>
+                </div>                
+            </div>
+        </section>
+
+        <section id="album4" class="container">
+            <div class="conteudo">
+                <div class="esquerda">
+                    <ol>
+                        <li>Mosquito</li>
+                        <li>Superar</li>
+                        <li>Canão Foi Tão Bom</li>
+                        <li>País Da Fome</li>
+                        <li>Maloca É Maré</li>
+                        <li>Respeito É Lei</li>
+                        <li>Quem Viver Verá</li>
+                        <li>Levada Segura</li>
+                        <li>O Gatilho</li>
+                        <li>Sai da Frente</li>
+                        <li>Míssel</li>
+                    </ol>
+                </div>
+
+                <div class="direita">
+                    <figure>
+                        <a href="https://www.youtube.com/watch?v=Cuuc-7-vQC0&list=OLAK5uy_mvmQPeSjNaq-dXIA8um74-6vG-mycXvBE" target="_blank">
+                            <img src="assets/img/album_sabotage.jfif">
+                        </a>
+                    </figure>
+                </div>                
+            </div>
+        </section>
+
+        <section id="album5" class="container">
+            <div class="conteudo">
+                <div class="esquerda">
+                    <figure>
+                        <a href="https://www.youtube.com/watch?v=shmtnNFhxAc&list=OLAK5uy_n7cPxoRUTbcBcwZN6z99yRAlSMn7r2Epg" target="_blank">
+                            <img src="assets/img/album_invasor.jpg">
+                        </a>
+                    </figure>
+                </div>
+
+                <div class="direita">
+                    <ol>
+                        <li>O Invasor</li>
+                        <li>Aracnídeo</li>
+                        <li>Dama Tereza</li>
+                    </ol>
+                </div>                
+            </div>
+        </section>
+        <!-- ALBUNS ============================================== -->
+
+    
+        <!-- RODAPÉ ============================================== -->
+        <footer>
+            <div class="footer-content">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/icon/png_white_icon.png" alt="Logo - Rap é compromisso">
+                    </a>
+                </div>
+
+                <p>
+                    <span>Hip Hop Culture</span> <br>
+                    <a href="#">Rap é Compromisso</a> since 2000. Faça contato pelas redes sociais!
+                </p>
+                
+                <ul class="socials">
+                    <li><a href="https://br.linkedin.com/in/leonardo-vas" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/Leonardo-LRD"  target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXJRtgjHCXFFlSbqVKXRNMSRvrpfmwvbpWTkrhbSPtVvkWLFsBzWkpvvbnkZVpwfkllSJ" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright &copy; 2022 <a href="https://www.sptech.school/" target="_blank">SPTech</a>. Designed By <span>Leonardo-LRD</span></p>
+            </div>
+        </footer>
+        <!-- RODAPÉ ============================================== -->
+    </div>
+    <!-- ============================================ CONTEUDO ============================================ -->
+</body>
+
+<script src="js/menu.js"></script>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="assets/icon/white_icon.jpg">
+
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>Hip Hop Culture | Home</title>
+</head>
+
+<body>
+    <!-- ============================================== MENU ============================================== -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/icon/png_white_icon.png" alt="Logo - Rap é compromisso">
+            </a>
+        </div>
+        
+        <ul>
+            <li><a href="#section_banner">HIP-HOP</a></li>
+            <li><a href="#section_skt">SKATE</a></li>
+            <li><a href="#section_rap">RAP</a></li>
+            <li><a href="#section_sabota">SABOTAGE</a></li>
+        </ul>
+        
+        <div class="menu-login">
+            <ul>
+                <li><a href="cadastro.html">CADASTRE-SE</a></li>
+                <li id="pipe">|</li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- ============================================== MENU ============================================== -->
+
+
+    <!-- ============================================== CORPO ============================================== -->
+    <section id="section_banner" class="container">
+        <div class="conteudo">
+            <h2 class="prim">Hip Hop e skate</h2>
+            <h2>arte de rua para todos</h2>
+
+            <p>
+                Cultura Hip Hop do movimento às quedas que nos ensinam a levantar e seguir em frente. Venha fazer parte, cadastre-se agora!
+            </p>
+
+            <button><a href="cadastro.html">CADASRE-SE</a></button>
+        </div>
+    </section>
+
+    <section id="section_skt" class="container">
+        <div class="conteudo">
+            <div class="esquerda">
+                <h2 class="prim skt">o skate me acompanha assim como a arte e a música</h2>
+            </div>
+
+            <div class="linha"></div>
+            
+            <div class="direita">
+                <figure>
+                    <img id="img" src="assets/img/leo_skt.jpg">
+                    <video id="vid" src="assets/mp4/skt_vid.mp4" preload="metadata" muted autoplay loop style="display: none;"></video>
+                </figure>
+
+                <i onclick="changeMedia()" class="fa-solid fa-angle-right" id="btn"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="section_rap" class="container">
+        <div class="conteudo">
+            <h2 class="prim">Grandes nomes e percursores do rap internacional</h2>
+        </div>
+    </section>
+
+    <section id="section_sabota" class="container">
+        <div class="conteudo">
+            <div class="esquerda">
+                <figure>
+                    <img src="assets/img/album_compromisso.jfif">
+                </figure>
+            </div>
+
+            <div class="direita">
+                <h2 class="prim">sabotage</h2>
+                <h2>a Referencia no rap nacional</h2>
+
+                <p>
+                    Faça login para ter acesso a discografia completa do sabotage e votar em sua música favorita!
+                </p>
+
+                <button><a href="login.html">LOGIN</a></button>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================== CORPO ============================================== -->
+
+    
+    <!-- ============================================== RODAPÉ ============================================== -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/icon/png_white_icon.png" alt="Logo - Rap é compromisso">
+                </a>
+            </div>
+
+            <p>
+                <span>Hip Hop Culture</span> <br>
+                <a href="albuns.html">Rap é Compromisso</a> since 2000. Faça contato pelas redes sociais!
+            </p>
+            
+            <ul class="socials">
+                <li><a href="https://br.linkedin.com/in/leonardo-vas" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/Leonardo-LRD"  target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXJRtgjHCXFFlSbqVKXRNMSRvrpfmwvbpWTkrhbSPtVvkWLFsBzWkpvvbnkZVpwfkllSJ" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; 2022 <a href="https://www.sptech.school/" target="_blank">SPTech</a>. Designed By <span>Leonardo-LRD</span></p>
+        </div>
+    </footer>
+    <!-- ============================================== RODAPÉ ============================================== -->
+</body>
+
+<script src="js/index.js"></script>
+
+</html>

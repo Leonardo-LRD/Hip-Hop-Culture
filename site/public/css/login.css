@@ -1,0 +1,38 @@
+/* ================================== CORPO ================================== */
+.container {
+    background-image: url("../assets/img/login.jpg");
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ================================== CORPO ================================== */
+
+
+/* =============================== FORMULÁRIO =============================== */
+/* PRETO ==================================== */
+.banner .card {
+    margin: 6em 33em 0 0;
+    color: #ffffff;
+    background-color: #111111;
+    text-shadow: none;
+}
+
+.formulario {
+    padding-bottom: 15px;
+}
+
+.formulario button {
+    margin: 0.8em 0 0.5em 0;
+}
+
+.formulario .tipo_campo {
+    text-shadow: none;
+}
+
+.loading-div {
+    position: absolute;
+    top: 313px;
+}
+/* PRETO ==================================== */
+/* =============================== FORMULÁRIO =============================== */

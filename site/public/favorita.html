@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="assets/icon/white_icon.jpg">
+    
+    <script src="js/funcoes.js"></script>
+
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="css/side-menu.css">
+    <link rel="stylesheet" href="css/favorita.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>Hip Hop Culture | Musica Favorita</title>
+</head>
+
+<body onload="validarSessao()"></body>
+<!-- <body> -->
+    <!-- ============================================== MENU ============================================== -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/icon/png_white_icon.png" alt="Logo - Rap é compromisso">
+            </a>
+        </div>
+    
+        <ul>
+            <li><a href="albuns.html#album1">Rap É Compromisso</a></li>
+            <li id="pipe">|</li>
+            <li><a href="albuns.html#album2">Uma Luz Que Nunca Irá Se Apagar</a></li>
+            <li id="pipe">|</li>
+            <li><a href="albuns.html#album3">Rap É o Hino Que Me Tem Vivo</a></li>
+            <li id="pipe">|</li>
+            <li><a href="albuns.html#album4">Sabotage</a></li>
+            <li id="pipe">|</li>
+            <li><a href="albuns.html#album5">O Invasor</a></li>
+        </ul>
+    </header>
+    <!-- ============================================== MENU ============================================== -->
+
+
+    <!-- =========================================== SIDE MENU =========================================== -->
+    <div class="sidebar">
+        <div class="logo_content">
+            <img src="assets/icon/png_white_icon.png" width="50px" alt="Logo - Rap é compromisso">
+            <div class="logo">
+                <div class="logo_name">HIP HOP CULTURE</div>
+            </div>
+            <i class="fa-solid fa-bars" id="btn"></i>
+        </div>
+
+        <ul class="nav_list">
+            <!-- <li>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Pesquisar...">
+                <span class="tooltip">Pesquisar...</span>
+            </li> -->
+
+            <li id="fav_mus">
+                <a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="links_name">Musica Favorita</span>
+                </a>
+                <span class="tooltip">Musica Favorita</span>
+            </li>
+
+            <li id="albuns">
+                <a href="albuns.html">
+                    <i class="fa-solid fa-compact-disc"></i>
+                    <span class="links_name">Albuns</span>
+                </a>
+                <span class="tooltip">Albuns</span>
+            </li>
+
+            <li id="ranking">
+                <a href="ranking.html">
+                    <i class="fa-solid fa-trophy"></i>
+                    <span class="links_name">Ranking</span>
+                </a>
+                <span class="tooltip">Ranking</span>
+            </li>
+        </ul>
+
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <!-- colocar na função -->
+                    <img id="profile_img" src="" alt="">
+
+                    <div class="name_job">
+                        <div class="name"><span id="b_usuario">Usuário</span></div>
+                        <div class="job">Rap Lover</div>
+                    </div>
+                </div>
+
+                <i onclick="limparSessao()" class="fa-solid fa-arrow-right-from-bracket" id="log-out"></i>
+            </div>
+        </div>
+    </div>
+    <!-- =========================================== SIDE MENU =========================================== -->
+
+
+    <!-- ============================================ CONTEUDO ============================================ -->
+    <div class="home_content">
+        <!-- FORMULÁRIO ============================================== -->
+        <section class="container">
+            <div class="banner">
+                <div class="alerta_erro">
+                    <div class="card_erro" id="cardErro">
+                        <span id="mensagem_erro"></span>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <p>Vote na sua música favorita do Sabotage!</p>
+            
+                    <div class="formulario">
+                        <select id="slc_vote">
+                            <option value="0">Selecionar...</option>
+                            <option value="1">A cultura</option>
+                            <option value="2">Cabeça de Nego</option>
+                            <option value="3">Canão foi tão bom</option>
+                            <option value="4">Cantando pro Santo</option>
+                            <option value="5">Cigarro mata</option>
+                            <option value="6">Cocaína</option>
+                            <option value="7">Gíria Criminal</option>
+                            <option value="8">Marginal Alado</option>
+                            <option value="9">Mosquito</option>
+                            <option value="10">Mun-Rá</option>
+                            <option value="11">Na Zona Sul</option>
+                            <option value="12">No Brooklin</option>
+                            <option value="13">O Enxame</option>
+                            <option value="14">O Gatilho</option>
+                            <option value="15">O Gatilho 2</option>
+                            <option value="16">O Invasor</option>
+                            <option value="17">País da Fome</option>
+                            <option value="18">País da Fome, Pt. II</option>
+                            <option value="19">Rap é Compromisso!</option>
+                            <option value="20">Respeito é Pra Quem Tem</option>
+                            <option value="21">Sai da Frente</option>
+                            <option value="22">Um Bom Lugar</option>
+                            <option value="23">Vamo Fuma</option>
+                            <option value="24">Vira Lata S/A</option>
+                        </select>
+            
+                        <button onclick="cadastrarMusicaFav()" class="btn">Votar</button>
+                    </div>
+            
+                    <div id="div_aguardar" class="loading-div">
+                        <!-- <img src="./assets/circle-loading.gif" id="loading-gif"> -->
+            
+                        <!-- <svg class="position-absolute mx-auto" viewBox="-2 -2 64 64" width="60" height="60" style="left:0;right:0">
+                            <path d="M30 0A30 30 0 0 1 60 30M30 60A30 30 0 0 1 0 30" fill="none" stroke="#6cf" stroke-width="2">
+                                <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="0.5s" keyTimes="0;1" values="0 30 30;180 30 30" keySplines="0.5 0 0.5 1" calcMode="spline"></animateTransform>
+                            </path>
+                        </svg> -->
+                        
+                        <!-- Imagem SVG gerada no site: https://loading.io/ - LOADING BRANCO -->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                            <g transform="translate(25 50)">
+                                <circle cx="0" cy="0" r="6" fill="#ffffff">
+                                    <animateTransform attributeName="transform" type="scale" begin="-0.3333333333333333s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+                                </circle>
+                            </g>
+                            <g transform="translate(50 50)">
+                                <circle cx="0" cy="0" r="6" fill="#ffffff">
+                                    <animateTransform attributeName="transform" type="scale" begin="-0.16666666666666666s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+                                </circle>
+                            </g>
+                            <g transform="translate(75 50)">
+                                <circle cx="0" cy="0" r="6" fill="#ffffff">
+                                    <animateTransform attributeName="transform" type="scale" begin="0s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+                                </circle>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FORMULÁRIO ============================================== -->
+
+    
+        <!-- RODAPÉ ============================================== -->
+        <footer>
+            <div class="footer-content">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/icon/png_white_icon.png" alt="Logo - Rap é compromisso">
+                    </a>
+                </div>
+
+                <p>
+                    <span>Hip Hop Culture</span> <br>
+                    <a href="albuns.html">Rap é Compromisso</a> since 2000. Faça contato pelas redes sociais!
+                </p>
+                
+                <ul class="socials">
+                    <li><a href="https://br.linkedin.com/in/leonardo-vas" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/Leonardo-LRD"  target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXJRtgjHCXFFlSbqVKXRNMSRvrpfmwvbpWTkrhbSPtVvkWLFsBzWkpvvbnkZVpwfkllSJ" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright &copy; 2022 <a href="https://www.sptech.school/" target="_blank">SPTech</a>. Designed By <span>Leonardo-LRD</span></p>
+            </div>
+        </footer>
+        <!-- RODAPÉ ============================================== -->
+    </div>
+    <!-- ============================================ CONTEUDO ============================================ -->
+</body>
+
+<script src="js/menu.js"></script>
+<script src="js/favorita.js"></script>
+
+</html>

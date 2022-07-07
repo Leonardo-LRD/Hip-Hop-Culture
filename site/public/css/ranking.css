@@ -1,0 +1,59 @@
+/* ============================ SIDE MENU - AGORA ============================ */
+.sidebar ul #ranking a {
+    border: 1px solid #fff;
+    box-shadow: 0 0 8px;
+}
+.sidebar.active #ranking a {
+    color: #fff;
+}
+.sidebar ul #ranking a:hover {
+    color: #000;
+    background: #fff;
+}
+/* ============================ SIDE MENU - AGORA ============================ */
+
+
+/* ================================== MENU ================================== */
+header {
+    padding-right: 1.5em;
+    justify-content: flex-end;
+    position: absolute;
+    /* caso fique ruim no notebook, aumentar fonte */
+    font-size: 20px;
+}
+
+header .logo {
+    margin-left: 8.5vw;
+}
+/* ================================== MENU ================================== */
+
+
+/* ================================== CORPO ================================== */
+.home_content .container {
+    background-image:url("../assets/img/ranking.jpg");
+    background-position: center;
+    background-attachment: local;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.graph {
+    width: 80%;
+    padding-top: 85px;
+}
+
+.graph #canvas_grafico {
+    padding: 2em 1em 0.5em 1em;
+    background: rgba(255, 255, 255, 0.1);
+    /* background: #000000d2; */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /* border-radius: 0.5em; */
+    box-shadow: 0 25px 45px rgb(0, 0, 0); 
+    /* backdrop-filter: blur(1px); */
+    /* background-color: #11111163;
+    box-shadow: #fff 0 0 40px;  */
+}
+/* ================================== CORPO ================================== */
