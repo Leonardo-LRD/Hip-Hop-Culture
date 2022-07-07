@@ -5,6 +5,9 @@ var sql = require('mssql');
 var sqlServerConfig = {
     server: "svr-1adsb-grupo5.database.windows.net",
     database: "grupo5-mat",
+    //alterar para data writer
+    // user: "usuarioParaAPIArduino_datawriter",
+    // password: "#Gf_senhaParaAPI",
     user: "admin-1adsb-grupo05",
     password: "#Gfgrupo5",
     pool: {
@@ -13,7 +16,7 @@ var sqlServerConfig = {
         idleTimeoutMillis: 30000
     },
     options: {
-        encrypt: true, 
+        encrypt: true, // for azure
     }
 }
 
@@ -36,6 +39,7 @@ var mySqlConfig = {
 // };
 
 function executar(instrucao) {
+    // VERIFICA A VARIÁVEL DE AMBIENTE SETADA EM app.js
     if (process.env.AMBIENTE_PROCESSO == "producao") {
         return new Promise(function (resolve, reject) {
             sql.connect(sqlServerConfig).then(function () {

@@ -1,6 +1,8 @@
 function cadastrar() {
     aguardar();
 
+    //Recupere o valor da nova input pelo nome do id
+    // Agora vá para o método fetch logo abaixo
     var nomeVar = nome_input.value;
     var emailVar = email_input.value;
     var senhaVar = senha_input.value;
@@ -85,6 +87,7 @@ function cadastrar() {
         },
         body: JSON.stringify({
             // crie um atributo que recebe o valor recuperado aqui
+            // Agora vá para o arquivo routes/usuario.js
             nomeServer: nomeVar,
             emailServer: emailVar,
             senhaServer: senhaVar

@@ -1,6 +1,8 @@
 function cadastrarMusicaFav() {
     aguardar();
 
+    //Recupere o valor da nova input pelo nome do id
+    // Agora vá para o método fetch logo abaixo
     var musicaFavVar = slc_vote.value;
     var idVar = sessionStorage.ID_USUARIO;
 
@@ -9,7 +11,7 @@ function cadastrarMusicaFav() {
 
 
     // Validações:
-    // Select option vazios
+    // Select vazios
     if (ipt_vazio) {
         cardErro.style.display = "block"
         mensagem_erro.innerHTML = "Selecione uma uma música para votar!";
@@ -30,6 +32,7 @@ function cadastrarMusicaFav() {
         },
         body: JSON.stringify({
             // crie um atributo que recebe o valor recuperado aqui
+            // Agora vá para o arquivo routes/usuario.js
             musicaServer: musicaFavVar,
             idServer: idVar
         })
